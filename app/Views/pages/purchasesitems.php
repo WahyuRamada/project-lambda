@@ -1,5 +1,5 @@
 <div class= "container" >
-<h3 class="float-end" > PENCARIAN BUKU </h3>
+<h3 class="float-end" > Purchasesitems </h3>
 </div>
 <h4 class="float-start">Add data </h4>
 
@@ -17,14 +17,14 @@
 <table class="table text-center">
   <thead>
     <tr> 
-      <th scope="col" class="table-primary">NO</th>
-      <th scope="col" class="table-primary">Code</th>
-      <th scope="col" class="table-primary">Penulis</th>
-      <th scope="col" class="table-primary">Judul Buku</th>
-      <th scope="col" class="table-primary">Harga (rp)</th>
-      <th scope="col" class="table-primary">Stok</th>
-      <th scope="col" class="table-primary">Edit</th>
-      <th scope="col" class="table-primary">Delate</th>
+      <th scope="col" class="table-warning">NO</th>
+      <th scope="col" class="table-warning">Code</th>
+      <th scope="col" class="table-warning">Penulis</th>
+      <th scope="col" class="table-warning">Judul Buku</th>
+      <th scope="col" class="table-warning">Harga (rp)</th>
+      <th scope="col" class="table-warning">Stok</th>
+      <th scope="col" class="table-warning">Edit</th>
+      <th scope="col" class="table-warning">Delate</th>
     </tr>
   </thead>
   <tbody>

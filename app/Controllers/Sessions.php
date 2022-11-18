@@ -30,7 +30,8 @@ class Sessions extends BaseController
             $this->session->set('user_id', 1);
             return redirect()->to('/pages');
         } else{
-            echo "email dan password yang anda masukkan tidak sesuai";
+            $this ->session->setFlashdata('danger', 'Username dan password yang anda masukkan salah');
+            return redirect()->to('/');
         }
     }
     public function logout()

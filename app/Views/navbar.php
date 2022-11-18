@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
  <div class="container-fluid">
- <a class="navbar-brand fw-bold" href="/pages">PROJECT lambda</a>
+ <a class="navbar-brand fw-bold" href="/pages">Toko Buku</a>
  <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 aria-expanded="false" aria-label="Toggle navigation">
@@ -8,70 +8,62 @@ aria-expanded="false" aria-label="Toggle navigation">
  </button>
  <div class="collapse navbar-collapse" id="navbarSupportedContent">
  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+ <li class="nav-item">
+ <a class="nav-link active text-center" aria-current="page"
+href="/pages/user">User</a>
+ </li>
  
  <li class="nav-item">
  <a class="nav-link active text-center" aria-current="page"
-href="/pages/datauser">Data User</a>
+href="/pages/books">Books</a>
  </li>
 
  <li class="nav-item text-center">
  <a class="nav-link active" aria-current="page"
-href="/pages/datadistributor">Data Distributor</a>
+href="/pages/suppliers">Suppliers</a>
  </li>
 
  <li class="nav-item text-center">
  <a class="nav-link active" aria-current="page"
-href="/pages/datapenerbit">Data Penerbit</a>
+href="/pages/publishers">Publishers</a>
+ </li>
+
+
+ <li class="nav-item text-center">
+ <a class="nav-link active" aria-current="page"
+href="/pages/authors">Authors</a>
  </li>
 
  <li class="nav-item text-center">
  <a class="nav-link active" aria-current="page"
-href="/pages/datakatagoribuku">Data katagori buku</a>
+href="/pages/bookcatagories">Book Catagories</a>
  </li>
 
  <li class="nav-item text-center">
  <a class="nav-link active" aria-current="page"
-href="/pages/datajenisbuku">Data jenis buku</a>
+href="/pages/purchases">Purchases</a>
  </li>
 
  <li class="nav-item text-center">
  <a class="nav-link active" aria-current="page"
-href="/pages/databuku">Data Buku</a>
+href="/pages/purchasesitems">Purchases Items</a>
  </li>
 
  <li class="nav-item text-center">
  <a class="nav-link active" aria-current="page"
-href="/pages/pencarianbuku">Pencarian Buku</a>
+href="/pages/sales">Sales</a>
  </li>
 
  <li class="nav-item text-center">
  <a class="nav-link active" aria-current="page"
-href="/pages/stokbuku">Stok Buku</a>
+href="/pages/saleItems">Sale Item</a>
  </li>
 
  <li class="nav-item text-center">
- <a class="nav-link active" aria-current="page"
-href="/pages/penerimaanbuku">Penerimaan Buku</a>
- </li>
-
- <li class="nav-item text-center">
- <a class="nav-link active" aria-current="page"
-href="/pages/transaksiretur">Transaksi Retur</a>
- </li>
-
- <li class="nav-item text-center">
- <a class="nav-link active" aria-current="page"
-href="/pages/pembayaran">Pembayaran</a>
- </li>
-
- <li class="nav-item text-center">
- <a class="nav-link active" aria-current="page"
-href="/pages/penjualan">Penjualan</a>
- </li>
-
- <li class="nav-item text-center">
- <a class="nav-link active" aria-current="page"
-href="/pages/logout">LogOut</a>
+    <form action="/sessions/logout" method="post">
+ <button type="submit" class="btn btn-link">LogOut</button>
+</form>
  </li>
 
 

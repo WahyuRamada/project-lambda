@@ -15,6 +15,7 @@ class Pages extends BaseController
     public function index()
     {
         if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
             return redirect()->to('/');
         }
 
@@ -22,117 +23,123 @@ class Pages extends BaseController
         return view('layout',$data);
     }
 
-    public function datakatagoribuku()
+    public function authors()
     {    
         if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
             return redirect()->to('/');
         }
-        $data['main_view'] = 'pages/datakatagoribuku';
+        $data['main_view'] = 'pages/authors';
         return view('layout',$data);
     }
 
     public function datajenisbuku()
     {    
         if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
             return redirect()->to('/');
         }
         $data['main_view'] = 'pages/datajenisbuku';
         return view('layout',$data);
     }
 
-    public function databuku()
+    public function bookcatagories()
     {  
         if(!$this->session->get('user_id')){
-        return redirect()->to('/');
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
+            return redirect()->to('/');
         }
-        $data['main_view'] = 'pages/databuku';
+        $data['main_view'] = 'pages/bookCatagories';
         return view('layout',$data);
     }
 
-    public function DataUser()
+    public function books()
     {  
         if(!$this->session->get('user_id')){
-        return redirect()->to('/');
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
+            return redirect()->to('/');
         } 
-        $data['main_view'] = 'pages/datauser';
+        $data['main_view'] = 'pages/books';
         return view('layout',$data);
     }
 
-    public function DataDistributor()
+    public function suppliers()
     {
         if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
             return redirect()->to('/');
         }
-        $data['main_view'] = 'pages/datadistributor';
+        $data['main_view'] = 'pages/suppliers';
         return view('layout',$data);
     }
 
-    public function DataPenerbit()
+    public function publishers()
     {
         if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
             return redirect()->to('/');
         }
-        $data['main_view'] = 'pages/datapenerbit';
+        $data['main_view'] = 'pages/publishers';
+        return view('layout',$data);
+    }
+    
+    public function purchases()
+    {
+        if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
+            return redirect()->to('/');
+        }
+        $data['main_view'] = 'pages/purchases';
+        return view('layout',$data);
+    }
+    
+    public function purchasesitems()
+    {
+        if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
+            return redirect()->to('/');
+        }
+        $data['main_view'] = 'pages/Purchasesitems';
         return view('layout',$data);
     }
 
-    public function Pencarianbuku()
+        
+    public function sales()
     {
         if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
             return redirect()->to('/');
         }
-        $data['main_view'] = 'pages/Pencarianbuku';
+        $data['main_view'] = 'pages/sales';
         return view('layout',$data);
     }
 
-    public function stokbuku()
+    public function saleItems()
     {
         if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
             return redirect()->to('/');
         }
-        $data['main_view'] = 'pages/stokbuku';
+        $data['main_view'] = 'pages/saleItems';
         return view('layout',$data);
     }
 
-    public function penerimaanbuku()
+    public function user()
     {
         if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
             return redirect()->to('/');
         }
-        $data['main_view'] = 'pages/penerimaanbuku';
+        $data['main_view'] = 'pages/user';
         return view('layout',$data);
     }
 
-    public function transaksiretur()
-    {
-        if(!$this->session->get('user_id')){
-            return redirect()->to('/');
-        }
-        $data['main_view'] = 'pages/transaksiretur';
-        return view('layout',$data);
-    }
 
-    public function pembayaran()
-    {
-        if(!$this->session->get('user_id')){
-            return redirect()->to('/');
-        }
-        $data['main_view'] = 'pages/pembayaran';
-        return view('layout',$data);
-    }
-
-    public function penjualan()
-    {
-        if(!$this->session->get('user_id')){
-            return redirect()->to('/');
-        }
-        $data['main_view'] = 'pages/penjualan';
-        return view('layout',$data);
-    }
 
     public function logout()
     {
         if(!$this->session->get('user_id')){
+            $this ->session->setFlashdata('danger', 'anda harus login terlebih dahulu');
             return redirect()->to('/');
         }
         $data['main_view'] = 'pages/logout';
